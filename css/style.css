@@ -1,0 +1,90 @@
+  
+    .spinner-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .card-img-top {
+      object-fit: contain;
+      height: 200px;
+    }
+    .filter-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .filter-section select,
+    .filter-section input,
+    .filter-section button {
+      width: auto;
+      flex: 1 1 calc(20% - 10px);
+      min-width: 150px;
+    }
+    .card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: #fff; /* خلفية الكارت */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.card-img-container {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 200px; 
+  background: none; 
+}
+
+.card-img-top {
+  object-fit: contain;
+  max-height: 100%; 
+  width: auto; 
+}
+
+
+.card-body {
+  padding: 15px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.card-footer {
+ font-size: 0.85rem;
+    font-weight: bold;
+    color: #007bff;
+    border-top: 1px solid #ddd;
+    padding: 10px 9px;
+    text-align: left;
+}
+
+    @media (max-width: 768px) {
+      .filter-section select,
+      .filter-section input,
+      .filter-section button {
+        flex: 1 1 100%;
+      }
+    }
